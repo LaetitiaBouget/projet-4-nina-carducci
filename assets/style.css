@@ -6,7 +6,8 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,22 +19,42 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+h1{
 	font-size: 26px;
 }
 
-.nav ul {
+h2{
+	margin-top: 1em;
+	margin-bottom: 60px;
+	font-size: 30px;
+}
+
+h3{
+	text-align: center;
+	padding-block: 2em;
+	font-size: 1.75rem;
+}
+
+h4{
+	font-size: 1.75rem;
+}
+
+h5{
+	font-size: 1.5rem;
+}
+
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -74,18 +95,15 @@ body {
 #about-me {
 	flex: 2
 }
-.about-me__title {
-	margin-top: 1em;
-	margin-bottom: 60px;
-	font-size: 30px;
-}
-.about-me__introduction {
+
+#about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 16px;
 }
-#about-me p {
+#about-me_description {
 	width: 80%;
 	font-size: 14px;
 }
@@ -93,10 +111,7 @@ body {
 #gallery {
 	/*	min-height: 100vh; */
 }
-.title{
-	text-align: center;
-	padding-block: 2em;
-}
+
 .gallery .nav {
 	justify-content: center;
 }
@@ -137,19 +152,18 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
-	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
-.quote__text {
+blockquote {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
-.quote__author {
+figcaption {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
@@ -251,11 +265,11 @@ input[type="submit"] {
 	#about, #contact .container {
 		align-items: center;
 	}
-	.about-me__title {
+	.about-me h2 {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me__introduction, #about-me_description {
 		width: 100%;
 	}
 }
@@ -277,7 +291,7 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title{
+	#about-me h2{
 		text-align: center;
 		margin-top: 1em;
 	}
@@ -320,15 +334,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header nav, header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
