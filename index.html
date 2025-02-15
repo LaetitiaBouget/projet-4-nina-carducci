@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
-		<meta name="description" content="Nina Carducci, photographe à Bordeaux">
+		<meta name="description" content="Nina Carducci, photographe à Bordeaux. Shooting photos, retouches, albums personnalisés. Déplacements en Ile de France.">
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" href="./assets/style.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,78 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 		<script src="./assets/maugallery.js" defer></script>
 		<script src="./assets/scripts.js" defer></script>
-
+		<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "LocalBusiness",
+			  "name" : "Nina Carducci - Photographe",
+			  "image": "https://ninacarducci.github.io/assets/images/camera.png",
+			  "telephone": "05 56 67 78 89",
+			  "address": {
+					"@type": "PostalAddress",
+					"streetAddress": "68 avenue Alsace-Lorraine",
+					"addressLocality": "Bordeaux",
+					"postalCode": "33200",
+					"addressCountry" : "FR"
+					},
+			  "priceRange": "50-400",
+			  "creator": {
+				"@type": "Person",
+				"name" : "Nina Carducci",
+				"image": "https://ninacarducci.github.io/assets/images/nina.png",
+			  	"url": "ninacarducci.github.io",
+				"sameAs" :"https://www.instagram.com/ninacarducci.photo/?hl=fr",
+			  	"description": "Nina Carducci est une photographe professionnelle basée sur Bordeaux. Elle réalise des shootings, des retouches et peut créer des albums personnalisés. Déplacements possibles. Disponible en Ile de France."
+				},
+			  	"openingHours": "Mo-Fr 10:00-19:00",
+			  	"areaServed":[
+					{
+					"@type": "Place",
+					"name": "Bordeaux"
+					},
+					{
+					"@type": "Place",
+					"name": "Paris"
+					},
+					{
+					"@type": "Place",
+					"name": "Île-de-France"
+					}
+				],
+				"offers":[
+					{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "350",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Shooting photo",
+						"description": "Séance photo d'une demi-journée avec une photographe professionnelle."
+						}
+					},
+					{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "50",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Retouche photo",
+						"description": "Retouche professionnelle d'une photo sélectionnée."
+						}
+					},
+					{
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "400",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Album photo personnalisé",
+							"description": "Album photo personnalisé, format A4, 30 pages recto/verso. "
+						}
+					}
+				]
+			}
+			</script>
 		<title>Nina Carducci Photographie</title>
 	</head>
 
