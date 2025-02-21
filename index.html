@@ -16,8 +16,9 @@
 		<meta name="twitter:description" content="Shooting photos, retouches, albums personnalisés. Bordeaux et Ile de France." />
 		<meta name="twitter:image" content="https://laetitiabouget.github.io/projet-4-nina-carducci/assets/images/camera.png" />
 		<meta name="twitter:url" content="https://laetitiabouget.github.io/projet-4-nina-carducci/" />
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" href="./assets/style.min.css">
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@
 				"@type": "Person",
 				"name" : "Nina Carducci",
 				"image": "https://laetitiabouget.github.io/projet-4-nina-carducci/assets/images/nina.webp",
-			  	"url": "ninacarducci.github.io",
+			  	"url": "https://laetitiabouget.github.io/projet-4-nina-carducci/",
 				"sameAs" :"https://www.instagram.com/ninacarducci.photo/?hl=fr",
 			  	"description": "Nina Carducci est une photographe professionnelle basée sur Bordeaux. Elle réalise des shootings, des retouches et peut créer des albums personnalisés. Déplacements possibles. Disponible en Ile de France."
 				},
@@ -135,11 +136,11 @@
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
+						<span class="visually-hidden" style="opacity: 1; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)";>Previous</span>
 					</button>
 					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
+						<span class="visually-hidden" style="opacity: 1; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">Next</span>
 					</button>
 				</div>
 			</div>
@@ -231,11 +232,11 @@
 						<h4>Une question ? Une demande de devis ?</h4>
 						<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 						<form action="#" method="post">
-							<label>Nom</label>
+							<label for="nom">Nom</label>
 							<input type="text" name="nom" id="nom">
-							<label>Email</label>
+							<label for="email">Email</label>
 							<input type="email" name="email" id="email">
-							<label>Message</label>
+							<label for="message">Message</label>
 							<textarea name="message" id="message" cols="30" rows="10"></textarea>
 							<input type="submit" value="Envoyer">
 						</form>
